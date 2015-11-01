@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataClasses1">
+  <DataContextMoniker Name="/SqlProxyDC" />
+  <nestedChildShapes>
+    <classShape Id="c48d3c22-e87f-4921-bf76-2646e67cbceb" absoluteBounds="0.75, 1.125, 2, 1.1939925130208338">
+      <DataClassMoniker Name="/SqlProxyDC/Customer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a524ec39-76b8-43cc-bbd9-f1323cd32fd6" absoluteBounds="0.765, 1.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b75f9ce0-e59b-4727-8cc9-83d62919f6ed" absoluteBounds="3.5, 1.125, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/SqlProxyDC/Order" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3cab83be-ce1a-46f1-8b15-ca544450b564" absoluteBounds="3.515, 1.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="134fca6f-9ad6-4e3a-b32f-dd1d7ea33e17" absoluteBounds="6.25, 0.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/SqlProxyDC/OrderItem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e94fab52-bbb7-4fc2-9dfe-de75c123e0c0" absoluteBounds="6.265, 1.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="95f278b5-141b-4185-b62f-40b4936c8089" absoluteBounds="3.5, 4, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/SqlProxyDC/Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e892524f-bb70-4e99-b0ce-b2bad64b43b9" absoluteBounds="3.515, 4.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.72199625651042); (3.5 : 1.72199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SqlProxyDC/Customer/Customer_Order" />
+      <nodes>
+        <classShapeMoniker Id="c48d3c22-e87f-4921-bf76-2646e67cbceb" />
+        <classShapeMoniker Id="b75f9ce0-e59b-4727-8cc9-83d62919f6ed" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.72199625651042); (6.25 : 1.72199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SqlProxyDC/Order/Order_OrderItem" />
+      <nodes>
+        <classShapeMoniker Id="b75f9ce0-e59b-4727-8cc9-83d62919f6ed" />
+        <classShapeMoniker Id="134fca6f-9ad6-4e3a-b32f-dd1d7ea33e17" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.69314697265625); (7.25 : 4.69314697265625); (7.25 : 2.45359537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SqlProxyDC/Product/Product_OrderItem" />
+      <nodes>
+        <classShapeMoniker Id="95f278b5-141b-4185-b62f-40b4936c8089" />
+        <classShapeMoniker Id="134fca6f-9ad6-4e3a-b32f-dd1d7ea33e17" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
